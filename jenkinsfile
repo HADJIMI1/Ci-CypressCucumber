@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers{
-        // cette ligne dit a jenkins de regarder le git chaque minute
+        // cette ligne dit a jenkins de regarder le git chaque minute pour lancer a chaque push dans jenkins
         pollSCM('* * * * *')
     }
 
