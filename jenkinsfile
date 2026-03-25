@@ -1,6 +1,12 @@
 pipeline {
     agent any
 
+    triggers{
+        // cette ligne dit a jenkins de regarder le git chaque minute
+        pollSCM('* * * * *')
+    }
+
+
     parameters {
         // Choix du navigateur (Chrome par défaut)
         choice(name: 'BROWSER', choices: ['chrome', 'edge', 'electron', 'firefox'], description: 'Navigateur pour les tests')
