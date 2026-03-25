@@ -14,6 +14,7 @@ export default class LoginPage {
     constructor() {
 
     }
+    // aller sur la page d'aceuil
     gotoHomePage() {
         cy.visit(this.visitPage)
     }
