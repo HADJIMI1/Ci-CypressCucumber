@@ -46,7 +46,7 @@ pipeline {
             // Si le plugin n'est pas là, cette étape affichera une erreur mais tes tests auront tourné !
             cucumber buildStatus: 'null', 
                      fileIncludePattern: '**/*.json', 
-                     jsonReportDirectory: 'cypress/reports', 
+                     jsonReportDirectory: 'cypress/cucumber-json', 
                      sortingMethod: 'ALPHABETICAL'
         }
     }
